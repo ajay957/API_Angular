@@ -8,6 +8,7 @@ import { PassengersComponent } from './passengers/passengers.component';
 import { DataComponent } from './data/data.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
+import { UserDataComponent } from './user-data/user-data.component';
 
 const myRoute:Routes=[
   {
@@ -21,6 +22,10 @@ const myRoute:Routes=[
   {
     path:"info",
     component:UserInfoComponent
+  },
+  {
+    path:"userda",
+    component:UserDataComponent
   }
 ]
 
@@ -29,7 +34,8 @@ const myRoute:Routes=[
     AppComponent,
     PassengersComponent,
     DataComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    UserDataComponent
   ],
   imports: [
     BrowserModule,
