@@ -19,4 +19,8 @@ export class ApiService {
   fetchInfo=()=>{
     return this.http.get("https://reqres.in/api/users?page=1")
   }
+
+  fetchUserDa=()=>{
+    return this.http.get("https://dummyjson.com/users")
+  }
 }
