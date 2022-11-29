@@ -9,6 +9,7 @@ import { DataComponent } from './data/data.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './user-info/user-info.component';
 import { UserDataComponent } from './user-data/user-data.component';
+import { QuotesComponent } from './quotes/quotes.component';
 
 const myRoute:Routes=[
   {
@@ -26,6 +27,10 @@ const myRoute:Routes=[
   {
     path:"userda",
     component:UserDataComponent
+  },
+  {
+    path:"quote",
+    component:QuotesComponent
   }
 ]
 
@@ -35,7 +40,8 @@ const myRoute:Routes=[
     PassengersComponent,
     DataComponent,
     UserInfoComponent,
-    UserDataComponent
+    UserDataComponent,
+    QuotesComponent
   ],
   imports: [
     BrowserModule,

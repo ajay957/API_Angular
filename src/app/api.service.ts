@@ -23,4 +23,8 @@ export class ApiService {
   fetchUserDa=()=>{
     return this.http.get("https://dummyjson.com/users")
   }
+
+  fetchQuotes=()=>{
+    return this.http.get("https://dummyjson.com/quotes")
+  }
 }
