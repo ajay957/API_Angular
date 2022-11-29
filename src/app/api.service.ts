@@ -15,4 +15,8 @@ export class ApiService {
   fetchData=()=>{
     return this.http.get("https://datausa.io/api/data?drilldowns=Nation&measures=Population")
   }
+
+  fetchInfo=()=>{
+    return this.http.get("https://reqres.in/api/users?page=1")
+  }
 }
