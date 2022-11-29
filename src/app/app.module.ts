@@ -5,18 +5,24 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PassengersComponent } from './passengers/passengers.component';
+import { DataComponent } from './data/data.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:PassengersComponent
+  },
+  {
+    path:"data",
+    component:DataComponent
   }
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    PassengersComponent
+    PassengersComponent,
+    DataComponent
   ],
   imports: [
     BrowserModule,
